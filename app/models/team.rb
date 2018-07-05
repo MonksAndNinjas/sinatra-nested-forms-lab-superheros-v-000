@@ -1,4 +1,4 @@
-class Team < ActiveRecord::Base
+class Team
   attr_reader :name, :motto
 
   TEAMS = []
