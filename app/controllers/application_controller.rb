@@ -16,7 +16,7 @@ class App < Sinatra::Base
 
       
 
-      #erb :team
+      erb :team
     end
 
 end
