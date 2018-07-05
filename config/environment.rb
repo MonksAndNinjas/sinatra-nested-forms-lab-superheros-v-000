@@ -13,7 +13,7 @@ sql = <<-SQL
   )
 SQL
 
-  ActiveRecord::Base.connection
+  ActiveRecord::Base.connection.execute(sql)
 
   #if ENV["ACTIVE_RECORD_ENV"] == "development"
   #  ActiveRecord::Migration.verbose = false
