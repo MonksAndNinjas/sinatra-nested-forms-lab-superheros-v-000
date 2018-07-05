@@ -5,6 +5,13 @@ DB = ActiveRecord::Base.establish_connection(
   :database => "db/teams.sqlite"
 )
 
+sql = <<-SQL
+  CREATE TABLE IF NOT EXISTS teams (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    motto TEXT
+  )
+
   #DB = ActiveRecord::Base.connection
 
   #if ENV["ACTIVE_RECORD_ENV"] == "development"
