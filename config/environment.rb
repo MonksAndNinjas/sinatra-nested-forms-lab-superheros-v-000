@@ -14,6 +14,7 @@ sql = <<-SQL
     name TEXT,
     motto TEXT
   )
+SQL
 
   ActiveRecord::Base.connection.execute(sql)
 
