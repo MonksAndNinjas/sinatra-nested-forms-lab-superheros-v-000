@@ -8,4 +8,11 @@ connection = ActiveRecord::Base.establish_connection(
   :database => "db/teams.sqlite"
 )
 
+sql = <<-SQL
+  CREATE TABLE IF NOT EXISTS teams (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    motto TEXT
+  )
+
 require_all 'app'
