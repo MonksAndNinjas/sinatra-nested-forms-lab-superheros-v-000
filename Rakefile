@@ -1,1 +1,1 @@
-ENV["SINATRA_ENV"] ||= "development"
+ENV["SINATRA_ENV"] = "development"
