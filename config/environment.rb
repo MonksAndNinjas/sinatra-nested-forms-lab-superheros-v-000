@@ -5,7 +5,7 @@ Bundler.require(:default, ENV['SINATRA_ENV'])
 
 connection = ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database => "db/teams.sqlite"
+  :database => "/app/db/teams.sqlite"
 )
 
 sql = <<-SQL
