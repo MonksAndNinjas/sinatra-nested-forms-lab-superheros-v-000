@@ -16,6 +16,6 @@ sql = <<-SQL
   )
 SQL
 
-  ActiveRecord::Base.connection.execute(sql)
+ActiveRecord::Base.connection.execute(sql)
 
 require_all 'app'
