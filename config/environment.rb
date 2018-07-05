@@ -15,4 +15,6 @@ sql = <<-SQL
     motto TEXT
   )
 
+  ActiveRecord::Base.connection.execute(sql)
+
 require_all 'app'
