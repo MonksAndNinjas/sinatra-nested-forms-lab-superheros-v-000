@@ -11,8 +11,9 @@ sql = <<-SQL
     name TEXT,
     motto TEXT
   )
+SQL
 
-  #DB = ActiveRecord::Base.connection
+  ActiveRecord::Base.connection
 
   #if ENV["ACTIVE_RECORD_ENV"] == "development"
   #  ActiveRecord::Migration.verbose = false
