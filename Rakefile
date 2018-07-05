@@ -1,11 +1,8 @@
-namespace :db do
-  desc 'migrate changes to your database'
+ENV["SINATRA_ENV"] = "development"
 
-  task :environment do
-    require_relative './config/environment'
-  end
+require_relative './config/environemnt'
+require 'sinatra/activerecord/rake'
 
-  task :migrate => :environment do
-    Team.create_table
-  end
+task :console do 
+  Pry.start
 end
