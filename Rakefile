@@ -1,3 +1,3 @@
 ENV["SINATRA_ENV"] = "development"
 
-require_relative '../config/environment.rb'
+require_relative './config/environment.rb'
