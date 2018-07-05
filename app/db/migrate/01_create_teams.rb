@@ -1,2 +1,2 @@
-class CreateTeams < ActiveRecord::Migration
+class CreateTeams < ActiveRecord::Migration[4.2]
 end
