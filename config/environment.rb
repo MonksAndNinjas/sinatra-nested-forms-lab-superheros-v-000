@@ -9,3 +9,4 @@ DB = ActiveRecord::Base.establish_connection(
 
   if ENV["ACTIVE_RECORD_ENV"] == "development"
     ActiveRecord::Migration.verbose = false
+  end
